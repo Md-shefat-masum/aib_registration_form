@@ -1,0 +1,12 @@
+{
+  "name": "aib-registration-form",
+  "version": "0.0.0",
+  "scripts": {
+    "scss": "npx sass assets/scss/style.scss assets/styles/style.css -w",
+    "postcss": "npx postcss assets/styles/style.css -o assets/styles/style.css"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
