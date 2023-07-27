@@ -1,0 +1,208 @@
+body{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 100vh;
+        width: var(--form_width);
+        top: 11vh;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../images/logo.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 57%;
+        background-blend-mode: multiply;
+        opacity: 0.2;
+    }
+}
+.form {
+    .form_body {
+        padding-top: 20px;
+        width: var(--form_width);
+        // border: var(--border);
+        margin: 0 auto;
+        position: relative;
+        
+
+        .class {
+            h2 {
+                font-size: 14px;
+                text-align: right;
+                font-weight: 700;
+                padding-bottom: 26px;
+            }
+        }
+
+        .header {
+            display: flex;
+            gap: 20px;
+            position: relative;
+            padding-bottom: 45px;
+
+            .logo {
+                width: 105px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .information {
+                text-align: center;
+
+                h2 {
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+                h3 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    padding: 17px 0px;
+                }
+
+                h4 {
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+            }
+
+            .photo {
+                label {
+                    input {
+                        display: none;
+                    }
+
+                    height: 110px;
+                    width: 110px;
+                    position: absolute;
+                    text-align: center;
+                    top: 35px;
+                    right: 0;
+                    border: 1px solid var(--black);
+                    line-height: 20px;
+
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        label,
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+
+        .heading {
+            font-size: 13px;
+            line-height: 13px;
+            background-color: var(--brand_color);
+            color: var(--white);
+            letter-spacing: .5px;
+            padding: 5px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+
+            td {
+                border: 1px solid var(--black);
+                padding: 5px;
+                vertical-align: middle;
+                font-size: 14px;
+
+
+                input {
+                    border: 0;
+                    width: 100%;
+                    padding: 0;
+                }
+
+                &:nth-child(1) {
+                    width: 140px;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        .previous_attemp_module,
+        .category,
+        .education {
+            table {
+                td {
+                    text-align: center;
+
+                    input {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .category {
+            @media print {
+                page-break-after: always;
+            }
+        }
+
+        .application_for {
+            table {
+                td {
+                    font-size: 13px;
+                    padding: 3px;
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .essay {
+            padding-top: 10px;
+            padding-bottom: 0;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            font-weight: bold;
+
+            .right {
+                display: flex;
+                gap: 40px;
+                align-items: center;
+            }
+        }
+
+        .signature {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-top: 50px;
+            font-weight: 600;
+
+            .right {
+                padding-right: 145px;
+            }
+        }
+
+        .signature2 {
+            padding-bottom: 30px;
+
+            .right {
+                padding-right: 0;
+            }
+        }
+    }
+}
